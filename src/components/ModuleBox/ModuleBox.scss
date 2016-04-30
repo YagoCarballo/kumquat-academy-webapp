@@ -1,0 +1,91 @@
+@import '../../theme/variables';
+
+.moduleBoxComponent {
+  $moduleBoxSize: 200px;
+  $colorLineSize: 20px;
+  $colorLineHoverSize: 60px;
+
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  max-width: $moduleBoxSize;
+  max-height: $moduleBoxSize;
+  min-width: $moduleBoxSize;
+  min-height: $moduleBoxSize;
+  margin: 0 auto;
+
+  background-color: white;
+  border: 1px solid #E6E6E6;
+  border-radius: 10px;
+  cursor: pointer;
+
+  .moduleIconContainer {
+    position: relative;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    .moduleIcon {
+      position: relative;
+      top: 15px;
+      width: 100%;
+      max-height: 100%;
+      text-align: center;
+      font-size: 40px;
+      color: white;
+    }
+  }
+
+  p {
+    position: relative;
+    top: 15px;
+
+    text-align: center;
+    width: 100%;
+
+    &.moduleId {
+
+    }
+
+    &.moduleName {
+
+    }
+
+    &.moduleYear {
+      position: absolute;
+      top: $moduleBoxSize - 35px;
+      bottom: 0;
+      font-size: 10px;
+    }
+  }
+
+  .moduleColorLine {
+    position: absolute;
+    top: $moduleBoxSize - $colorLineSize;
+    width: 100%;
+    height: $colorLineSize;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    p {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .moduleColorLine {
+      top: $moduleBoxSize - $colorLineHoverSize;
+      height: $colorLineHoverSize;
+
+      transition: 0.3s ease-in-out;
+
+      p {
+        display: block;
+        color: white;
+      }
+    }
+  }
+}

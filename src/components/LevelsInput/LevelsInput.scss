@@ -1,0 +1,40 @@
+@import '../../theme/variables';
+
+.levelsInput {
+
+  .addLevelWell {
+    margin: 0;
+    padding: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: $brand-main;
+    color: white;
+
+    border: none;
+    border-bottom: 1px solid $border-light;
+
+    > div {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .addButtonCol {
+      padding-top: 24px;
+      padding-bottom: 5px;
+
+      .addButton {
+        width: 100%;
+      }
+    }
+  }
+
+  .levelsRow {
+    .levelsList {
+      :global(li:first-child) {
+        border-top: none;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+  }
+}

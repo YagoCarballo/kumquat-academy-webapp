@@ -1,0 +1,23 @@
+.addStudentToModuleContainer {
+  :global(.form-group) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .searchField {
+    border-radius: 20px;
+  }
+
+  .studentItem {
+    .avatar {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: 1px solid #D6D6D6;
+    }
+
+    .fullName {
+      margin-left: 15px;
+    }
+  }
+}

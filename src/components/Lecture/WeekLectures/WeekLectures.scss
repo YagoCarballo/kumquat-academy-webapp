@@ -1,0 +1,35 @@
+.weekLecturesComponent {
+  overflow-x: auto;
+  width: 100%;
+
+  > div {
+    margin: 0 auto;
+    width: 800px;
+
+    .dayCol {
+      min-width: 160px;
+      float: left;
+
+      .title {
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #cacaca;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+      .list {
+        .addButton {
+          margin: 5px;
+          width: 150px;
+          opacity: 0.5;
+          transition: opacity 300ms;
+
+          &:hover {
+            opacity: 1.0;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+}

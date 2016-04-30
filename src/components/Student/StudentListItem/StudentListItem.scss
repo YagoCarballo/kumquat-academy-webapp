@@ -1,0 +1,212 @@
+@import '../../../theme/variables';
+
+.studentListItemComponent {
+  overflow: hidden;
+  height: 150px;
+
+  background-color: #778484;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  .studentAvatar {
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+
+    > img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .fullName {
+    overflow-x: hidden;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 20px;
+    text-align: center;
+    border-bottom: 1px solid #bcbcbc;
+    background-color: white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    .firstName {}
+    .lastName {}
+  }
+
+  .status {
+    position: absolute;
+    top: 96px;
+    left: 20px;
+    width: 100px;
+    text-align: center;
+    background-color: rgba(0, 179, 238, 0.76);
+    color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .attachmentLink {
+    position: absolute;
+    top: 10px;
+    left: 130px;
+    width: calc(100% - 150px);
+    text-align: center;
+    color: white;
+    background-color: #03A9F4;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .attachments {
+    overflow-y: auto;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: calc(100% - 150px);
+    bottom: 35px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.91);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    &.noSubmissions {
+      border-top-left-radius: 5px !important;
+      border-top-right-radius: 5px !important;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      b {
+        width: 100%;
+      }
+    }
+  }
+
+  .gradeButton {
+    overflow: hidden;
+    position: absolute;
+    top: -40px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(24, 238, 0, 0.79);
+    border: 1px solid rgba(0, 160, 14, 0.64);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 500ms ease-in-out;
+
+    i {
+      font-size: 40px;
+      position: relative;
+      top: 8px;
+      left: 23px;
+    }
+
+    b {
+      font-size: 10px;
+      position: absolute;
+      bottom: 10px;
+      left: 22px;
+
+      &.gradeLabel {
+        font-size: 20px;
+        left: 15px;
+        bottom: 20px;
+      }
+    }
+
+    &.open {
+      top: 0;
+      right: 0;
+      border-radius: 0;
+      height: 100%;
+      width: 200px;
+      background-color: #F3F3F3;
+      border: none;
+      border-left: 1px solid #E6E6E6;
+      cursor: auto;
+
+      i, b {
+        display: none;
+      }
+
+      .gradeForm {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .label {
+          position: absolute;
+          top: 10px;
+          left: 0;
+          width: 100%;
+          color: black;
+          display: block;
+          text-align: center;
+        }
+
+        .number {
+          position: absolute;
+          left: 10px;
+          top: 30px;
+          width: 90%;
+          text-align: center;
+          color: black;
+        }
+
+        .cancelButton {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 50%;
+          height: 30px;
+          color: white;
+          background-color: #e00006;
+          text-align: center;
+          cursor: pointer;
+
+          span {
+            display: block;
+            width: 100%;
+          }
+        }
+
+        .saveButton {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 50%;
+          height: 30px;
+          color: white;
+          background-color: #009de0;
+          text-align: center;
+          cursor: pointer;
+
+          span {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

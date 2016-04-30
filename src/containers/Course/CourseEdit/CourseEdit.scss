@@ -1,0 +1,11 @@
+.courseEditPage {
+  margin: 0;
+  width: 100%;
+  padding-top: 25px;
+  padding-right: 15px;
+
+  .validationError {
+    color: red;
+    text-align: left;
+  }
+}

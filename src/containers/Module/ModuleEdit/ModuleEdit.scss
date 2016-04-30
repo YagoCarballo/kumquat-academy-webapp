@@ -1,0 +1,20 @@
+.moduleEditPage {
+  .validationError {
+    color: red;
+    text-align: left;
+  }
+
+  .iconAndPreview {
+    height: 300px;
+    margin: 0 auto;
+
+    > div {
+      float: left;
+      max-width: calc(100% - 240px);
+
+      &:last-child {
+        margin: 20px;
+      }
+    }
+  }
+}

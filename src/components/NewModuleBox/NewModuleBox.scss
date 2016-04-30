@@ -1,0 +1,80 @@
+@import '../../theme/variables';
+
+.newModuleBoxComponent {
+  $moduleBoxSize: 200px;
+  $colorLineSize: 20px;
+  $mainColor: #DCDCDC;
+
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  max-width: $moduleBoxSize;
+  max-height: $moduleBoxSize;
+  min-width: $moduleBoxSize;
+  min-height: $moduleBoxSize;
+  margin: 0 auto;
+
+  background-color: white;
+  border: 1px solid #E6E6E6;
+  border-radius: 10px;
+  cursor: pointer;
+
+  .newModuleIconContainer {
+    position: relative;
+    top: 30px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: $mainColor;
+
+    .newModuleIcon {
+      position: relative;
+      top: 40px;
+      width: 100%;
+      max-height: 100%;
+      text-align: center;
+      font-size: 40px;
+      color: white;
+    }
+  }
+
+  p {
+    position: relative;
+    top: 15px;
+
+    text-align: center;
+    width: 100%;
+
+    &.moduleId {
+
+    }
+  }
+
+  .newModuleColorLine {
+    position: absolute;
+    top: $moduleBoxSize - $colorLineSize;
+    width: 100%;
+    height: $colorLineSize;
+    background-color: $mainColor;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    p {
+      display: none;
+    }
+  }
+
+  &:hover {
+    opacity: 1.0;
+    transition: 0.3s ease-in-out;
+
+    .newModuleColorLine {
+      p {
+        display: block;
+        color: white;
+      }
+    }
+  }
+}

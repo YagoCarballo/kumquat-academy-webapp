@@ -1,0 +1,92 @@
+@import '../../../theme/variables';
+
+.studentCardComponent {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+
+  background-color: $brand-main;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  .studentAvatar {
+    overflow: hidden;
+    position: relative;
+    top: 5px;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+
+    > img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  .fullName {
+    overflow-x: hidden;
+    position: relative;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: 20px;
+    text-align: center;
+    border-bottom: 1px solid #bcbcbc;
+    background-color: white;
+    transition: top 600ms;
+
+    .firstName {}
+    .lastName {}
+  }
+
+  .actionsBar {
+    overflow-x: hidden;
+    position: relative;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #f2f2f2;
+    transition: top 500ms;
+  }
+
+  .actionButton {
+    color: white;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(121, 118, 118);
+    font-size: 30px;
+    height: 100%;
+    padding-top: 8px;
+
+    &.deleteButton {
+      background-color: #e00006;
+    }
+
+    &:hover {
+      background-color: rgb(183, 178, 178);
+    }
+  }
+
+  &:hover {
+    background-color: darken($brand-main, 5);
+  }
+
+  &.normalMode {
+    &:hover {
+      .fullName {
+        top: -15px;
+      }
+
+      .actionsBar {
+        top: -15px;
+      }
+    }
+  }
+}

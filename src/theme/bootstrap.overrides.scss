@@ -1,0 +1,32 @@
+/**
+ * Override Bootstrap styles that you can't modify via variables here.
+ *
+ */
+
+.row {
+  margin: 0;
+}
+
+.navbar-brand {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-default {
+  color: #999;
+  background-color: rgba(253, 253, 253, .95);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .17);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffa117;
+  background-color: transparent;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.14);
+}

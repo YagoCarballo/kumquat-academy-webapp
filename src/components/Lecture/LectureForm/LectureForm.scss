@@ -1,0 +1,9 @@
+.lectureFormComponent {
+  .form {
+    min-height: 400px;
+  }
+}
+
+:global(.modal-dialog) {
+  width: 90%;
+}

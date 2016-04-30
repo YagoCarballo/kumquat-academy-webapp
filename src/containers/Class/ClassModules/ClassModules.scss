@@ -1,0 +1,15 @@
+.classModulesPage {
+  :global(.panel-body) {
+    padding: 0;
+
+    .modulesGrid {
+      padding: 0;
+      width: 100%;
+
+      .moduleCol {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+}

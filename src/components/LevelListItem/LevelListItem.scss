@@ -1,0 +1,30 @@
+@import '../../theme/variables';
+
+.levelListItem {
+  .title {
+    overflow-x: hidden;
+    font-size: 15px;
+  }
+
+  .dates {
+    overflow-x: hidden;
+    width: 100%;
+    color: darkgray;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .actionButton {
+    cursor: pointer;
+
+    &:hover {
+      color: $brand-danger;
+    }
+  }
+
+  &:first-child {
+    border-top: none;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+}

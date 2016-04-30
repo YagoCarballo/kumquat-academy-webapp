@@ -1,0 +1,21 @@
+@import '../../../theme/variables';
+
+.addLevelPopover {
+  min-height: auto;
+  height: auto;
+  padding: 0;
+
+  h3 {
+    background-color: $brand-main;
+    color: white;
+    border: none;
+  }
+
+  label {
+    color: #000;
+  }
+
+  .saveButton {
+    background-color: $brand-main;
+  }
+}

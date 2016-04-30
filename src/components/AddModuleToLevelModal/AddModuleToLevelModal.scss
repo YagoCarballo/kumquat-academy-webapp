@@ -1,0 +1,58 @@
+@import '../../theme/variables';
+
+.addModuleModal {
+  .addModuleModalHeader {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: $brand-main;
+    color: white;
+    border-bottom: none;
+  }
+
+  :global(.modal-body) {
+    padding: 0;
+  }
+
+  .addModuleCode {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #62819A;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .addModuleModalFilter {
+    :global(.form-group) {
+      margin-bottom: 0;
+    }
+
+    .filterField {
+      border-radius: 25px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .addModuleModalModules {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    :global(.list-group-item:first-child) {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+
+    > div {
+      padding: 0;
+      overflow-y: auto;
+      max-height: 300px;
+      border: 1px solid rgba(221, 221, 221, 1);
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .listGroup {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "kumquat Academy",
+  "description": "Learning Platform",
+  "repository": "https://github.com/YagoCarballo/kumquat.academy.webapp",
+  "logo": "",
+  "keywords": [
+    "react",
+    "isomorphic",
+    "universal",
+    "webpack",
+    "express",
+    "hot reloading",
+    "react-hot-reloader",
+    "redux",
+    "starter",
+    "boilerplate",
+    "babel"
+  ]
+}

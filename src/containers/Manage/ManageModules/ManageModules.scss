@@ -1,0 +1,13 @@
+.manageModulesPage {
+  padding-top: 20px;
+  padding-right: 50px;
+  width: auto;
+
+  .group {
+    :global(.panel-body) {
+      > div {
+        margin: 5px;
+      }
+    }
+  }
+}

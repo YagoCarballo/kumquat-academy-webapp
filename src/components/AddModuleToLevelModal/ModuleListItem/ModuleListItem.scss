@@ -1,0 +1,60 @@
+@import '../../../theme/variables';
+
+.moduleItem {
+  padding: 5px;
+  cursor: pointer;
+
+  border: none;
+  border-top: 1px solid #ddd;
+
+  &:hover {
+    background-color: #fffee2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:global(.active) {
+    background-color: $brand-main !important;
+    border-color: $brand-main !important;
+  }
+
+  .iconColumn {
+    height: 40px;
+    padding: 0;
+
+    .moduleIconContainer {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin: 0 auto;
+
+      display: flex;
+      align-items: center;
+
+      .moduleIcon {
+        width: 100%;
+        max-height: 100%;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+      }
+    }
+  }
+
+  .codeColumn {
+    height: 40px;
+    padding: 0;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > b, > p {
+      width: 100%;
+    }
+  }
+}

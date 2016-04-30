@@ -1,0 +1,58 @@
+.uploadItem {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  height: 50px;
+
+  .preview {
+    position: absolute;
+    left: 0;
+    max-height: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    border-right: 1px solid #C1C1C1;
+    background-color: #AFAFAF;
+
+    .unknownFileType {
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      width: 100%;
+      padding-top: 1px;
+    }
+  }
+
+  .fileName {
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+    width: calc(100% - 85px);
+    font-size: 8px;
+    font-weight: 300;
+  }
+
+  .deleteButton {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    font-size: 20px;
+    color: #6B6B6B;
+    cursor: pointer;
+
+    &:hover {
+      color: #a8a8a8;
+    }
+  }
+
+  > div.uploadProgress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    height: 5px;
+  }
+}

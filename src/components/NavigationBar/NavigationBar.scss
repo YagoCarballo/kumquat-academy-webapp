@@ -1,0 +1,30 @@
+.navigationBar {
+  $icon-width: 143px;
+  $icon-height: 40px;
+
+  .brand {
+    display: block;
+    position: relative;
+    top: 5px;
+    left: 0;
+    width: $icon-width;
+    height: $icon-height;
+    background: url('./logo.png') no-repeat center center;
+    background-size: 80%;
+    margin: 0;
+  }
+  nav :global(.fa) {
+    font-size: 2em;
+    line-height: 20px;
+  }
+
+  .leftNav {
+    position: relative;
+    left: -15px;
+  }
+
+  .loggedInMessage {
+    cursor: pointer;
+    padding-left: 15px;
+  }
+}

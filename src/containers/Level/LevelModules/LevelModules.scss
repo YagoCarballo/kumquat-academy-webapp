@@ -1,0 +1,64 @@
+@import '../../../theme/variables';
+
+.levelModulesPage {
+  max-width: 100%;
+
+  :global(.panel-default) {
+    max-width: 100%;
+  }
+
+  :global(.panel-heading) {
+    color: white;
+    background-color: $brand-main;
+    border: none;
+  }
+
+  :global(.panel-body) {
+    padding: 0;
+
+    .modulesGrid {
+      padding: 0;
+      width: 100%;
+
+      .moduleCol {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+
+  .searchBox {
+    padding: 0;
+    text-align: right;
+
+    :global(.form-group) {
+      margin: 0;
+    }
+
+    .searchInput {
+      height: 30px;
+      border: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .addModuleButton {
+      background: transparent;
+      border-radius: 20px;
+      color: white;
+      border: 1px solid white;
+      font-weight: 200;
+
+      &:focus {
+        outline: none;
+        border: 1px solid rgb(255, 208, 102);
+      }
+
+      &:hover {
+        outline: none;
+        border: 1px solid rgb(255, 208, 102);
+        color: rgb(255, 208, 102);
+      }
+    }
+  }
+}

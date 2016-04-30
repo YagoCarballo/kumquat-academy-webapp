@@ -1,0 +1,17 @@
+.manageModuleLecturesPage {
+
+  .previewColumn {
+    padding: 0;
+
+    .previewAttachment {
+      overflow: hidden;
+      position: relative;
+      min-height: 170px;
+      border: 1px solid #c9c9c9;
+
+      > img {
+        height: 170px;
+      }
+    }
+  }
+}

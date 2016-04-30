@@ -1,0 +1,35 @@
+@import '../../theme/variables';
+
+.levelPage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  .levelContainer {
+    padding: 0;
+    padding-top: 15px;
+  }
+}
+
+.breadcrumbRow {
+  .breadcrumb {
+    margin: 0;
+    background-color: #859BAB;
+    border-radius: 0;
+
+    > li {
+      &:before {
+        color: white;
+      }
+
+      &:global(.active) {
+        color: rgba(0, 0, 0, 0.37);
+      }
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
